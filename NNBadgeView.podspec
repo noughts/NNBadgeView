@@ -9,20 +9,17 @@
 
 Pod::Spec.new do |s|
   s.name             = "NNBadgeView"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of NNBadgeView."
+  s.version          = "1.0.0"
+  s.summary          = "hoge"
   s.description      = <<-DESC
-                       An optional longer description of NNBadgeView
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       fuga
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/NNBadgeView"
+  s.homepage         = "https://github.com/noughts/NNBadgeView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "koichi yamamoto" => "koichi@dividual.jp" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NNBadgeView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/noughts/NNBadgeView.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/noughts'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -34,5 +31,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
 end

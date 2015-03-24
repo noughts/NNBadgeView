@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,13 +21,11 @@
                                 <rect key="frame" x="145" y="275" width="30" height="18"/>
                                 <color key="backgroundColor" red="0.98634642360000002" green="0.084784664209999999" blue="0.26611191029999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="plO-f0-mai" secondAttribute="height" multiplier="1:1" id="0up-yz-E8e"/>
                                     <constraint firstAttribute="height" constant="18" id="9BQ-XJ-GNs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="aXF-en-G3b">
@@ -37,12 +34,21 @@
                                     <action selector="hoge:" destination="vXZ-lx-hvc" eventType="valueChanged" id="KRU-dI-35S"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="storyboard上では幅がひろいですが、実行時にはちゃんと正常に表示されます" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKz-tD-g78">
+                                <rect key="frame" x="20" y="28" width="280" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="aXF-en-G3b" secondAttribute="centerX" id="1Yf-F6-zDX"/>
                             <constraint firstAttribute="centerY" secondItem="plO-f0-mai" secondAttribute="centerY" id="5HD-Zh-Xpz"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aXF-en-G3b" secondAttribute="bottom" constant="8" symbolic="YES" id="9uC-wv-PJ8"/>
+                            <constraint firstAttribute="trailing" secondItem="JKz-tD-g78" secondAttribute="trailing" constant="20" symbolic="YES" id="OJn-xL-EtB"/>
+                            <constraint firstItem="JKz-tD-g78" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="ROY-o4-Pfj"/>
+                            <constraint firstItem="JKz-tD-g78" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="sPg-BE-Jjc"/>
                             <constraint firstAttribute="centerX" secondItem="plO-f0-mai" secondAttribute="centerX" id="xBZ-t4-793"/>
                         </constraints>
                     </view>
