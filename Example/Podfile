@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'NNBadgeView', :exclusive => true do
+  pod "NNBadgeView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "NNBadgeView", :path => "../"
+
+  
+end
