@@ -7,23 +7,16 @@
 //
 
 #import "NNViewController.h"
+#import <NNBadgeView.h>
 
-@interface NNViewController ()
-
-@end
-
-@implementation NNViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+@implementation NNViewController{
+	__weak IBOutlet NNBadgeView* _badgeView;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(IBAction)hoge:(UIStepper*)sender{
+	_badgeView.badge = sender.value;
 }
+
+
 
 @end

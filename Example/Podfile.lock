@@ -1,0 +1,14 @@
+PODS:
+  - NNBadgeView (0.1.0)
+
+DEPENDENCIES:
+  - NNBadgeView (from `../`)
+
+EXTERNAL SOURCES:
+  NNBadgeView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NNBadgeView: 0ed231bcfb7a5d9b050370eac84cca1ae3d45c67
+
+COCOAPODS: 0.35.0
