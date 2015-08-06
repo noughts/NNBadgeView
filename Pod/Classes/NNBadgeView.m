@@ -1,5 +1,12 @@
 /*
  
+ HOW TO USE
+ --------
+ 1. UIButtonをstoryboardに配置します。
+ 2. 任意の背景色とフォントを設定します。
+ 3. 文字サイズに合わせて、AutoLayoutで高さ制約を追加します。
+ 
+ 
  UILabelだとパディングがうまく効かないので、UIButtonを使います。
  数をアップデートするときにアニメーションさせたいならbuttonType=systemを、
  アニメーションさせたくないなら buttonType=custom を使いましょう。
